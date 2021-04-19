@@ -1,0 +1,190 @@
+1.what is the Difference between C++ and java ? 
+Ans: 
+- Java is Platform independent, Java bytecode works on any operating System. C++ is Platform dependent, should be compiled for different platform.
+- Java  can run in any OS hence it is portable. C++ is platform dependent hence it is not portable.
+- Java is both Compiled and Interpreted Language. C++ is only Compiled Language.
+- In java memory management is System Controlled. Memory Management in C++ is Manual.
+- Java doesn’t have Virtual Keyword. C++ have Virtual Keyword.
+- Java supports call by value only. There is no call by reference in java. c++ supports both call by value and call by reference and
+
+2.What are the key features of java?
+1) Simple- Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.
+2) Object Oriented. In java, everything is an object which has some data and behaviour.
+3) Robust- Java makes an effort to eliminate error-prone situations by emphasizing mainly on compile time error checking and runtime checking.
+4) Platform Independent- Unlike many other programming languages when Java is compiled, it is not compiled into platform specific machine, rather into platform-independent bytecode. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.
+5) Secure- With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.
+6) Multi Threading- his design feature allows the developers to construct interactive applications that can run smoothly.
+7) Architectural Neutral- Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.
+8) High Performance − With the use of Just-In-Time compilers, Java enables high performance.
+
+
+3.What is JVM ?
+JVM is JAVA VIRTUAL MACHINE.
+- JVM is an interpreter which is responsible to run java bytecode line by line.
+- It is required to convert bytecode to machine specific code for execution. 
+- It is virtually present on your software or hardware.
+- JVM requires library files during  execution of code. 
+- JVM is platform dependent and  for each software and hardware we have different jvm configuration.
+- It does not exist physically. It is abstract in nature.It provides runtime environment.
+ - Task Of JVM :a)Loads code
+		b)Verify code
+		c)executes code 
+		d)provides runtime environment
+
+4.what is oops?why it called as object oriented?
+Ans:
+Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. 
+It is used to structure a software program into simple, reusable pieces of code blueprints,  which are used to create individual instances of objects.
+
+5.what is Multiple inheritance? Explain with real time and in a programmic way?
+6.Difference between abstract class and interface
+1) Abstract class can have abstract and non-abstract methods.	Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+2) Abstract class doesn't support multiple inheritance.	Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables. Interface has only static and final variables.
+4) Abstract class can provide the implementation of interface.	Interface can't provide the implementation of abstract class.
+5) The abstract keyword is used to declare abstract class. The interface keyword is used to declare interface.
+6) An abstract class can extend another Java class and implement multiple Java interfaces.	An interface can extend another Java interface only.
+
+
+7.What is Encapsulation?Explain with real time example?
+Ans:  In this OOPs concept, the variables of a class are always hidden from other classes. It can only be accessed using the methods of their current class. For example - in school, a student cannot exist without a class.
+ADVANTAGES : Security,Enhancement,Maintainability,Modularity
+DISADVANTAGES : Time consuming,length of the code increases because validation required.
+eg. In ATM machine all the hardware and code is wrapped inside the ATM box which is not visible to use this is Encapsulation
+	
+8.what is Polymorphism? and inheritnce?
+Polymorphism
+Polymorphism refers to one of the OOPs concepts in Java which is the ability of a variable, object or function to take on multiple forms. 
+e.g :
+   i)Same pen can be used for writing purpose, for paper weigth and also to wrap hair.
+   ii)append method of String Class.
+
+Inheritance
+Inheritance is one of the Basic Concepts of OOPs in which one object acquires the properties and behaviors of the parent object. It’s creating a parent-child relationship between two classes. It offers robust and natural mechanism for organizing and structure of any software.
+
+
+9.What is Method Overriding and Method Overloading ?xplain with program?
+Method Overloading: 
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+Method overloading increases the readability of the program.
+
+There are two ways to overload the method in java
+-By changing number of arguments
+-By changing the data type
+
+Java Method Overloading example
+class OverloadingExample{  
+static int add(int a,int b){return a+b;}  
+static int add(int a,int b,int c){return a+b+c;}  
+}  
+
+Method Overriding
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+The method must have the same name as in the parent class also the method must have the same parameter as in the parent class and there must be an IS-A relationship.
+
+Java Method Overriding example
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void eat(){System.out.println("eating bread...");}  
+}  
+
+
+10.what is collection?what's its need?
+- Collection in general represent a single unit of objects. In java Collection framework represents a unified architecture for storing and manipulating a group of objects.
+
+11.diffrence between array and arraylist? any programmetical difference?
+- Array is of fixed length whereas ArrayList is dynamic
+- Array can store both primitives nad objects in java but  in Arraylist we can only store objects.
+- An array is basic functionality provided by Java. ArrayList is part of collection framework in Java. Therefore array members are accessed using [], while ArrayList has a set of methods to access elements and modify them.
+
+12.Difference between list and arraylist 
+-One of the major differences is that List is an interface and ArrayList is a class of Java Collection framework.
+-The List extends the collection framework, comparatively ArrayList extends AbstractList class and implements the List interface.
+-The namespace for the List and ArrayList is System.Collection.Generic and System Collection, respectively.
+-List stores elements in a sequence and are identified by the individual index number. Comparatively, ArrayList stores the elements in a dynamic array; it can grow when required.
+
+13.Explain Exception handling and how it is handled?
+- Basically Exception means an abnormal event causing disturbance to the normal flow of program.
+- There are 2 types of Exception : 
+       1)checked-  exception which get checked at compile time. eg:IOException, SQLException
+       2)unchecked - exception dont get checked at compile time
+eg: Arithmetic Exception, NullPointerException
+- Exception handling is a mechanism to handle runtime errors such as ClassNotFoundException, etc.
+- Exception handling is done with the help of: try and catch block, throws
+
+14.What is garbage collection?
+Garbage Collection is process of reclaiming the runtime unused memory automatically. In other words, it is a way to destroy the unused objects
+To do so, in java it is performed automatically. So, java provides better memory management.
+Advantage of Garbage Collection
+It makes java memory efficient because garbage collector removes the unreferenced objects from heap memory.
+It is automatically done by the garbage collector(a part of JVM) so we don't need to make extra efforts.
+
+
+15.Explain Public static void main()?
+ i)System is a class present in java.lang package.
+  ii)out is a static member of the System class & is an instance of java.io.PrintSream class.
+  iii)Prinln() is a method present in PrintStream class.
+
+16.write a program to concat two arraylist if we are having first arraylist of 5 students 
+firstname and then second arraylist of having five student lastname.
+then how we can concat first student firstname and lastname and others also.
+17.Write a program to reverse a String contents.
+
+import java.util.*;
+class ReverseString
+{
+  public static void main(String args[])
+  {
+    String original, reverse = "";
+    Scanner in = new Scanner(System.in);
+
+    System.out.println("Enter a string to reverse");
+    original = in.nextLine();
+
+    int length = original.length();
+
+    for (int i = length - 1 ; i >= 0 ; i--)
+      reverse = reverse + original.charAt(i);
+
+    System.out.println("Reverse of the string: " + reverse);
+  }
+}
+
+18.write a program to check anagram of string.
+import java.util.Arrays;  
+   
+public class AnagramString {  
+    static void isAnagram(String str1, String str2) {  
+        String s1 = str1.replaceAll("\\s", "");  
+        String s2 = str2.replaceAll("\\s", "");  
+        boolean status = true;  
+        if (s1.length() != s2.length()) {  
+            status = false;  
+        } else {  
+            char[] ArrayS1 = s1.toLowerCase().toCharArray();  
+            char[] ArrayS2 = s2.toLowerCase().toCharArray();  
+            Arrays.sort(ArrayS1);  
+            Arrays.sort(ArrayS2);  
+            status = Arrays.equals(ArrayS1, ArrayS2);  
+        }  
+        if (status) {  
+            System.out.println(s1 + " and " + s2 + " are anagrams");  
+        } else {  
+            System.out.println(s1 + " and " + s2 + " are not anagrams");  
+        }  
+    }  
+   
+    public static void main(String[] args) {  
+        isAnagram("Keep", "Peek");  
+        isAnagram("Mother In Law", "Hitler Woman");  
+    }  
+}  
+
+19.Do you Know any versioning tool?explain it?
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+Tools: GitHub, GitLab, Beanstalk, PerForce, Apache Subversion, 
+AWS CodeCommit. ...
+GitHub is a website for hosting projects that use git. Git is a type of version control system (VCS) that makes it easier to track changes to files. For example, when you edit a file, git can help you determine exactly what changed, who changed it, and why.
+
